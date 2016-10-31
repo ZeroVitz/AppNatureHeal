@@ -4,11 +4,11 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_cuenta"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_perfil"
             android:title="@string/cuenta" />
         <item
             android:id="@+id/nav_fav"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_estrella"
             android:title="@string/mis_favoritos" />
         <item
             android:id="@+id/nav_conf"
@@ -17,17 +17,16 @@
 
         <item
             android:id="@+id/nav_sugerencia"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_sugerencia"
             android:title="@string/sugerencia" />
         <item
             android:id="@+id/nav_acerca"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_info"
             android:title="@string/acerca_de_nature_heal" />
         <item
             android:id="@+id/nav_cerrar"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_cerrar"
             android:title="@string/cerrar_sesion" />
-
     </group>
 
 
