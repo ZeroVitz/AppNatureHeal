@@ -1,5 +1,7 @@
 package com.example.greciaguzmn.natureheal;
 
+import android.net.Uri;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,7 +16,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, AcercaFragment.OnFragmentInteractionListener {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,22 +56,51 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_cuenta) {
-            // Handle the camera action
-        } else if (id == R.id.nav_fav) {
+        boolean fragmentTransaction = false;
+        Fragment fragment =null;
 
-        } else if (id == R.id.nav_conf) {
 
-        } else if (id == R.id.nav_sugerencia) {
+        switch (id) {
+            case R.id.nav_home:
+                break;
 
-        } else if (id == R.id.nav_acerca) {
+            case R.id.nav_cuenta:
+                break;
 
-        } else if (id == R.id.nav_cerrar) {
+            case R.id.nav_fav:
+                break;
+
+            case R.id.nav_conf:
+                break;
+
+            case R.id.nav_sugerencia:
+                break;
+
+            case R.id.nav_acerca:
+                fragment = new AcercaFragment();
+                fragmentTransaction = true;
+                getSupportActionBar().setTitle("Acerca de Nature Heal");
+
+                break;
+
+            case R.id.nav_cerrar:
+                break;
+
+        }
+
+        if(fragmentTransaction){
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            item.setChecked(true);
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }
