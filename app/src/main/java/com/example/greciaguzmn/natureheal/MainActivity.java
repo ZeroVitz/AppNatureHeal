@@ -16,7 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, AcercaFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener, AcercaFragment.OnFragmentInteractionListener, FavoritosFragment.OnFragmentInteractionListener {
 
 
 
@@ -68,6 +68,9 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_fav:
+                fragment = new FavoritosFragment();
+                fragmentTransaction = true;
+                getSupportActionBar().setTitle("Favoritos");
                 break;
 
             case R.id.nav_conf:
