@@ -1,4 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,4 +6,24 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-</FrameLayout>
+    <TextView
+        android:text="Nature Heal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/fTitulo" />
+
+    <TextView
+        android:text="@string/fParrafo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/fParrafo"
+        android:gravity="center_vertical|right"
+        android:layout_below="@+id/fTitulo"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+</RelativeLayout>

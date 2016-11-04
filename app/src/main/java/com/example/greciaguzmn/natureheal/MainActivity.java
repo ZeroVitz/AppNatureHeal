@@ -1,5 +1,6 @@
 package com.example.greciaguzmn.natureheal;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -74,6 +75,8 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_sugerencia:
+                startActivity(new Intent (MainActivity.this, Pop.class));
+
                 break;
 
             case R.id.nav_acerca:

@@ -14,6 +14,7 @@
             android:id="@+id/nav_fav"
             android:icon="@drawable/ic_estrella"
             android:title="@string/mis_favoritos" />
+
         <item
             android:id="@+id/nav_conf"
             android:icon="@drawable/ic_menu_manage"
