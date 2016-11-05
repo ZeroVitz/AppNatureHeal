@@ -18,7 +18,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AcercaFragment.OnFragmentInteractionListener, FavoritosFragment.OnFragmentInteractionListener,
-        ConfiguracionFragment.OnFragmentInteractionListener {
+        ConfiguracionFragment.OnFragmentInteractionListener, fragmentHome.OnFragmentInteractionListener {
 
 
 
@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.nav_home:
+                fragment = new fragmentHome();
+                fragmentTransaction = true;
+                getSupportActionBar().setTitle("Nature Heal");
                 break;
 
             case R.id.nav_cuenta:
