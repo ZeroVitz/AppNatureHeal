@@ -21,6 +21,12 @@
 
 
     <string name="ingresa_algo">Ingresa algo</string>
+    <string name="permission_rationale" />
+    <string name="error_invalid_password" />
+    <string name="error_field_required" />
+    <string name="error_invalid" />
+    <string name="error_invalid_email" />
+    <string name="error_incorrect_password" />
 
     <string-array name="opciones">
         <item>Opcion A</item>
@@ -43,5 +49,13 @@
         <item>Remedio 4</item>
         <item>Remedio 5</item>
         </string-array>
+
+    <string-array name="enfermedades">
+        <item>Gripe</item>
+        <item>Dolor de estomago</item>
+        <item>Dolor de cabeza</item>
+        <item>Acne</item>
+        <item>Salpullido</item>
+    </string-array>
 
 </resources>
