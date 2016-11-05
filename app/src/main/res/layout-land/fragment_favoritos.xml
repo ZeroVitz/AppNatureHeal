@@ -6,6 +6,8 @@
     tools:context="com.example.greciaguzmn.natureheal.FavoritosFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+
     <ImageButton
         android:layout_width="130dp"
         android:layout_height="130dp"
@@ -45,11 +47,11 @@
         android:layout_width="130dp"
         android:layout_height="130dp"
         app:srcCompat="@drawable/banana"
-        android:layout_marginTop="92dp"
         android:id="@+id/ejemplo"
         android:background="?attr/colorButtonNormal"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="169dp"
         android:layout_marginRight="10dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp" />
 </RelativeLayout>
