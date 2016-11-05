@@ -6,50 +6,41 @@
     tools:context="com.example.greciaguzmn.natureheal.FavoritosFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageButton
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        app:srcCompat="@drawable/heart"
-        android:id="@+id/ejemplo2"
-        android:background="?attr/colorButtonNormal"
-        android:layout_marginEnd="24dp"
-        android:layout_alignTop="@+id/ejemplo3"
-        android:layout_toStartOf="@+id/ejemplo3"
-        android:layout_marginLeft="0dp"
-
-    />
 
     <ImageButton
-        android:layout_width="130dp"
-        app:srcCompat="@drawable/hospital"
-        android:layout_marginTop="13dp"
-        android:id="@+id/ejemplo3"
-        android:layout_height="130dp"
-        android:background="?attr/colorButtonNormal"
-        android:layout_below="@+id/ejemplo"
-        android:layout_alignStart="@+id/ejemplo"
-        android:layout_marginRight="0dp"
-        />
-
-    <ImageButton
-        android:layout_width="130dp"
         android:layout_height="130dp"
         app:srcCompat="@drawable/sad"
-        android:id="@+id/ejemplo4"
-        android:background="?attr/colorButtonNormal"
-        android:layout_marginLeft="0dp"
-        android:layout_alignTop="@+id/ejemplo"
-        android:layout_alignStart="@+id/ejemplo2" />
+        android:id="@+id/imageButton5"
+        android:layout_width="130dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="104dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <ImageButton
-        android:layout_width="130dp"
         android:layout_height="130dp"
         app:srcCompat="@drawable/banana"
-        android:layout_marginTop="92dp"
-        android:id="@+id/ejemplo"
-        android:background="?attr/colorButtonNormal"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="10dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:id="@+id/imageButton"
+        android:layout_width="130dp"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_toEndOf="@+id/imageButton5"
+        android:layout_marginStart="23dp" />
+
+    <ImageButton
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/heart"
+        android:id="@+id/imageButton6"
+        android:layout_width="130dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/imageButton5"
+        android:layout_alignStart="@+id/imageButton5" />
+
+    <ImageButton
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/hospital"
+        android:id="@+id/imageButton7"
+        android:layout_width="130dp"
+        android:layout_alignTop="@+id/imageButton6"
+        android:layout_alignStart="@+id/imageButton" />
+
 </RelativeLayout>
