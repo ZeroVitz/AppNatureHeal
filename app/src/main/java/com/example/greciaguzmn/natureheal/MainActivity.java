@@ -1,11 +1,13 @@
 package com.example.greciaguzmn.natureheal;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -99,6 +101,20 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_cerrar:
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("Cerrar sesión ")
+                        .setMessage("¿Estás seguro que deseas cerrar esta sesión? ")
+                        .setPositiveButton("Si", new DialogInterface.OnClickListener()
+                        {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
                 break;
 
         }
