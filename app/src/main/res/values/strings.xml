@@ -16,6 +16,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fParrafo">Nature Heal es una aplicación con fines educativos, creada por el equipo Dream Team conformado por Mauricio Camacho, Carlos Cruz, Grecia Guzmán. Estudiantes de segundo año de la carrera de Ingeniería de Sistemas de información de la Universidad Centroamérica. Esta aplicación tiene como visión dar un acompañamiento para las personas que han sufrido algún tipo de enfermedad, pero apoyándose únicamente de medicinas naturales.</string>
     <string name="buscar_por_enfermedades">buscar_por_enfermedades</string>
+
+
     <string name="ingresa_algo">Ingresa algo</string>
 
     <string-array name="opciones">
