@@ -18,7 +18,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AcercaFragment.OnFragmentInteractionListener, FavoritosFragment.OnFragmentInteractionListener,
-        ConfiguracionFragment.OnFragmentInteractionListener, fragmentHome.OnFragmentInteractionListener {
+        ConfiguracionFragment.OnFragmentInteractionListener, fragmentHome.OnFragmentInteractionListener, cuentaFragment.OnFragmentInteractionListener {
 
 
 
@@ -70,6 +70,9 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_cuenta:
+                fragment = new cuentaFragment();
+                fragmentTransaction = true;
+                getSupportActionBar().setTitle("Cuenta");
                 break;
 
             case R.id.nav_fav:
