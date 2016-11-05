@@ -19,6 +19,9 @@
     <string name="advertencias">Advertencias::</string>
     <string name="precauciones">Precauciones:</string>
 
+
+    <string name="ingresa_algo">Ingresa algo</string>
+
     <string-array name="opciones">
         <item>Opcion A</item>
         <item>Opcion B</item>
