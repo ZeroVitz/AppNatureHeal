@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity
         ConfiguracionFragment.OnFragmentInteractionListener, fragmentHome.OnFragmentInteractionListener, cuentaFragment.OnFragmentInteractionListener {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

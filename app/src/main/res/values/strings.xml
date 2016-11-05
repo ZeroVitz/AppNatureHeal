@@ -36,4 +36,12 @@
         <item>Borrar cuenta</item>
     </string-array>
 
+    <string-array name="remedios">
+        <item>Remedio 1</item>
+        <item>Remedio 2</item>
+        <item>Remedio 3</item>
+        <item>Remedio 4</item>
+        <item>Remedio 5</item>
+        </string-array>
+
 </resources>
