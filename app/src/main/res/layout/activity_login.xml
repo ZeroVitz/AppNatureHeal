@@ -68,9 +68,9 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Iniciar Sesión"
                 android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/iniciarSesion"
                 android:textStyle="bold" />
 
             <Button
@@ -79,9 +79,9 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Registrarse"
                 android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/registrarse"
                 android:textStyle="bold" />
 
         </LinearLayout>

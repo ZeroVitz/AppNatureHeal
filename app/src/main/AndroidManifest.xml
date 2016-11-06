@@ -24,16 +24,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Pop"
+            android:name=".PopActivity"
             android:theme="@style/AppTheme.CustomTheme" />
-        <activity android:name=".Registro1">
+        <activity android:name=".Registro1Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Registro2" />
+        <activity android:name=".Registro2Activity" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login">

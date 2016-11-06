@@ -3,86 +3,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.greciaguzmn.natureheal.fragmentHome">
+    tools:context="com.example.greciaguzmn.natureheal.HomeFragment">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="31dp"
         android:id="@+id/imageView3"
-        android:layout_below="@+id/titulo"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titulo"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="31dp" />
+
+    <ImageView
         android:id="@+id/imageView4"
-        android:layout_alignTop="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView3"
         android:layout_marginEnd="63dp" />
 
     <TextView
-        android:text="Copyright@DreamTeamOrigins"
-        android:textColor="#050505"
+        android:id="@+id/txtcopyright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="22dp"
-        android:id="@+id/txtcopyright"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="15dp" />
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/copyright"
+        android:textColor="#050505" />
 
     <Button
-        android:text="Buscar por enfemerdades"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="46dp"
         android:id="@+id/buttonEnfermedad"
-        android:layout_below="@+id/buttonRemedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/buttonRemedio"
-        android:layout_toEndOf="@+id/imageView3" />
+        android:layout_below="@+id/buttonRemedio"
+        android:layout_marginTop="46dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:text="@string/buscarEnfermedad" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/food"
         android:id="@+id/imageView2"
-        android:layout_below="@+id/imageView4"
-        android:layout_toStartOf="@+id/imageView4" />
-
-    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/leaf"
+        android:layout_below="@+id/imageView4"
+        android:layout_toStartOf="@+id/imageView4"
+        app:srcCompat="@drawable/ic_food" />
+
+    <ImageView
         android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
         android:layout_below="@+id/imageView3"
-        android:layout_alignStart="@+id/imageView3" />
+        app:srcCompat="@drawable/ic_leaf" />
 
     <Button
-        android:text="Buscar remedios caseros"
+        android:id="@+id/buttonRemedio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:id="@+id/buttonRemedio"
-        android:duplicateParentState="false"
-        android:layout_below="@+id/imageView2"
         android:layout_alignEnd="@+id/imageView4"
-        android:layout_toEndOf="@+id/imageView3" />
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="56dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:duplicateParentState="false"
+        android:text="@string/buscarRemedios" />
 
     <TextView
-        android:text="BIENVENIDOS A NATURE HEAL"
+        android:id="@+id/titulo"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:id="@+id/titulo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
         android:fontFamily="sans-serif"
+        android:text="@string/bienvenidos"
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="normal|bold"
-        android:textAlignment="center"
-        tools:layout_marginBottom="2dp"
-        android:layout_marginTop="12dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        tools:layout_marginBottom="2dp" />
 
 
 </RelativeLayout>

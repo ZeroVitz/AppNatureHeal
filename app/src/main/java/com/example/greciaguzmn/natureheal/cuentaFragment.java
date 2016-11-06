@@ -12,14 +12,14 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link cuentaFragment.OnFragmentInteractionListener} interface
+ * {@link CuentaFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
  */
-public class cuentaFragment extends Fragment {
+public class CuentaFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public cuentaFragment() {
+    public CuentaFragment() {
         // Required empty public constructor
     }
 

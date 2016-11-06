@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="19dp"
+        android:text="@string/precauciones"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/subtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/imageView7"
+        android:fontFamily="casual"
+        android:text="@string/encuentraRemedios"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/LoremIpsum"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="casual"
+        android:text="@string/semillaGieasol"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/titpre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/remediodescp"
+        android:layout_marginTop="17dp"
+        android:text="@string/advertencias"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titpre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/LoremIpsum"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/remediodescp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView8"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/LoremIpsum"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/subtitulo"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/ic_sem" />
+</RelativeLayout>

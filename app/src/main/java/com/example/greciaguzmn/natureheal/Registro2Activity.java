@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Registro2 extends AppCompatActivity implements View.OnClickListener {
+public class Registro2Activity extends AppCompatActivity implements View.OnClickListener {
 
     Button boton, boton2;
 
@@ -22,13 +22,13 @@ public class Registro2 extends AppCompatActivity implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.botonReg2:
-                Intent intent= new Intent(this, MainActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 break;
             case R.id.boton2Reg2:
-                Intent intent2= new Intent(this, MainActivity.class);
+                Intent intent2 = new Intent(this, MainActivity.class);
                 startActivity(intent2);
                 break;
 

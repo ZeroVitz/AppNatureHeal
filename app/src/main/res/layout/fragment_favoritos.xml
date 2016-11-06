@@ -8,39 +8,39 @@
     <!-- TODO: Update blank fragment layout -->
 
     <ImageButton
-        android:layout_height="130dp"
-        app:srcCompat="@drawable/sad"
         android:id="@+id/imageButton5"
         android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="55dp"
         android:layout_marginTop="104dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        app:srcCompat="@drawable/ic_sad" />
 
     <ImageButton
-        android:layout_height="130dp"
-        app:srcCompat="@drawable/banana"
         android:id="@+id/imageButton"
         android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_alignTop="@+id/imageButton5"
+        android:layout_marginStart="23dp"
         android:layout_toEndOf="@+id/imageButton5"
-        android:layout_marginStart="23dp" />
+        app:srcCompat="@drawable/ic_banana" />
 
     <ImageButton
-        android:layout_height="130dp"
-        app:srcCompat="@drawable/heart"
         android:id="@+id/imageButton6"
         android:layout_width="130dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="130dp"
+        android:layout_alignStart="@+id/imageButton5"
         android:layout_below="@+id/imageButton5"
-        android:layout_alignStart="@+id/imageButton5" />
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/ic_heart" />
 
     <ImageButton
-        android:layout_height="130dp"
-        app:srcCompat="@drawable/hospital"
         android:id="@+id/imageButton7"
         android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignStart="@+id/imageButton"
         android:layout_alignTop="@+id/imageButton6"
-        android:layout_alignStart="@+id/imageButton" />
+        app:srcCompat="@drawable/ic_hospital" />
 
 </RelativeLayout>

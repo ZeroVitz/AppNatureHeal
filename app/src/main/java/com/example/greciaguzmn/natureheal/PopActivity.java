@@ -8,7 +8,7 @@ import android.view.View;
 /**
  * Created by CRUZ on 04/11/2016.
  */
-public class Pop extends Activity{
+public class PopActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class Pop extends Activity{
         int width = dm.widthPixels;
         int height = dm.heightPixels;
 
-        getWindow().setLayout((int)(width*.8), (int)(height*.6));
+        getWindow().setLayout((int) (width * .8), (int) (height * .6));
 
 
     }

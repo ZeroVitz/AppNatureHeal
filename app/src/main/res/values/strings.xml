@@ -16,7 +16,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fParrafo">Nature Heal es una aplicación con fines educativos, creada por el equipo Dream Team conformado por Mauricio Camacho, Carlos Cruz, Grecia Guzmán. Estudiantes de segundo año de la carrera de Ingeniería de Sistemas de información de la Universidad Centroamérica. Esta aplicación tiene como visión dar un acompañamiento para las personas que han sufrido algún tipo de enfermedad, pero apoyándose únicamente de medicinas naturales.</string>
     <string name="buscar_por_enfermedades">buscar_por_enfermedades</string>
-    <string name="advertencias">Advertencias::</string>
+    <string name="advertencias">Advertencias:</string>
     <string name="precauciones">Precauciones:</string>
 
 
@@ -64,5 +64,29 @@
         completions."
     </string>
     <string name="Ingresa_algo">Ingresa_algo</string>
+    <string name="iniciarSesion">Iniciar Sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="usuario">Usuario:</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="correo">Correo:</string>
+    <string name="instruccion">Elija su foto de perfil</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="paso1">Paso 1: Tu perfil</string>
+    <string name="paso2">Paso 2: ¿Alergias?</string>
+    <string name="alergias">Alergias:</string>
+    <string name="omitir">Omitir</string>
+    <string name="appname">Nature Heal</string>
+    <string name="alimientos">Alimientos:</string>
+    <string name="encuentraRemedios">Encuentra remedios caseros</string>
+    <string name="LoremIpsum">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</string>
+    <string name="semillaGieasol">Semillas de girasol para el higado</string>
+    <string name="bienvenidos">BIENVENIDOS A NATURE HEAL</string>
+    <string name="buscarEnfermedad">Buscar por enfemerdades</string>
+    <string name="copyright">Copyright@DreamTeamOrigins</string>
+    <string name="buscarRemedios">Buscar remedios caseros</string>
+    <string name="danosSugerencia">Danos tu sugerencia</string>
+    <string name="descartar">Descartar</string>
+    <string name="enviar">Enviar</string>
+    <string name="home">Home</string>
 
 </resources>

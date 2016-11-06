@@ -1,44 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="?attr/colorBackgroundFloating">
 
     <TextView
-        android:text="Danos tu sugerencia"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="69dp"
-        android:id="@+id/textView3"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:text="@string/danosSugerencia" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text=""
-        android:ems="10"
-        android:layout_marginTop="57dp"
         android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
 
     <Button
-        android:text="Descartar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/button"
-        android:layout_marginTop="81dp"
-        android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/editText" />
-
-    <Button
-        android:text="Enviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="81dp"
+        android:text="@string/descartar" />
+
+    <Button
         android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/button"
         android:layout_alignBottom="@+id/button"
-        android:layout_alignEnd="@+id/editText" />
+        android:layout_alignEnd="@+id/editText"
+        android:text="@string/enviar" />
 
 </RelativeLayout>

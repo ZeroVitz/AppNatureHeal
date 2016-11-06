@@ -5,22 +5,18 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AcercaFragment.OnFragmentInteractionListener, FavoritosFragment.OnFragmentInteractionListener,
-        ConfiguracionFragment.OnFragmentInteractionListener, fragmentHome.OnFragmentInteractionListener, cuentaFragment.OnFragmentInteractionListener {
+        ConfiguracionFragment.OnFragmentInteractionListener, HomeFragment.OnFragmentInteractionListener, CuentaFragment.OnFragmentInteractionListener {
 
 
     @Override
@@ -29,7 +25,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -60,18 +55,18 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         boolean fragmentTransaction = false;
-        Fragment fragment =null;
+        Fragment fragment = null;
 
 
         switch (id) {
             case R.id.nav_home:
-                fragment = new fragmentHome();
+                fragment = new HomeFragment();
                 fragmentTransaction = true;
                 getSupportActionBar().setTitle("Nature Heal");
                 break;
 
             case R.id.nav_cuenta:
-                fragment = new cuentaFragment();
+                fragment = new CuentaFragment();
                 fragmentTransaction = true;
                 getSupportActionBar().setTitle("Cuenta");
                 break;
@@ -89,7 +84,7 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_sugerencia:
-                startActivity(new Intent (MainActivity.this, Pop.class));
+                startActivity(new Intent(MainActivity.this, PopActivity.class));
 
                 break;
 
@@ -105,8 +100,7 @@ public class MainActivity extends AppCompatActivity
                         .setIcon(android.R.drawable.ic_dialog_alert)
                         .setTitle("Cerrar sesión ")
                         .setMessage("¿Estás seguro que deseas cerrar esta sesión? ")
-                        .setPositiveButton("Si", new DialogInterface.OnClickListener()
-                        {
+                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 finish();
@@ -119,7 +113,7 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-        if(fragmentTransaction){
+        if (fragmentTransaction) {
             getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
             item.setChecked(true);
 

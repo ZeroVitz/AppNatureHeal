@@ -4,13 +4,11 @@
     android:layout_height="match_parent"
     tools:context="com.example.greciaguzmn.natureheal.ConfiguracionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <ListView
+        android:id="@+id/miLista"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:entries="@array/opciones"
-        android:id="@+id/miLista"
-        />
+        android:entries="@array/opciones" />
 
 
 </LinearLayout>

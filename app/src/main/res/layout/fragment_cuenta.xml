@@ -2,15 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.greciaguzmn.natureheal.cuentaFragment">
+    tools:context="com.example.greciaguzmn.natureheal.CuentaFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ListView
+        android:id="@+id/Cuentalista"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:entries="@array/opcuenta"
-        android:id="@+id/Cuentalista"
-        />
+        android:entries="@array/opcuenta" />
 
-</LinearLayout
-    >
+</LinearLayout>
