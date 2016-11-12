@@ -68,12 +68,12 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView5"
-        android:layout_toStartOf="@+id/imageView5"
+        android:layout_alignBottom="@+id/imagelogo1"
+        android:layout_toStartOf="@+id/imagelogo1"
         android:text="@string/appname" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imagelogo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/spinner"
