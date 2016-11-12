@@ -105,4 +105,9 @@ public class ConfiguracionFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+    public static ConfiguracionFragment getInstance(){
+        ConfiguracionFragment fragment = new ConfiguracionFragment();
+        return fragment;
+    }
 }

@@ -33,6 +33,8 @@ public class HomeFragment extends Fragment {
         // Required empty public constructor
     }
 
+
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -104,5 +106,10 @@ public class HomeFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    public static HomeFragment getInstance(){
+        HomeFragment fragment = new HomeFragment();
+        return fragment;
     }
 }

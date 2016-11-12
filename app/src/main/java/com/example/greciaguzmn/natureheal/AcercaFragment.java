@@ -69,4 +69,9 @@ public class AcercaFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+    public static AcercaFragment getInstance(){
+        AcercaFragment fragment = new AcercaFragment();
+        return fragment;
+    }
 }

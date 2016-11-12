@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -35,6 +37,10 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Fragment fragment = HomeFragment.getInstance();
+        mostrarFragment(fragment);
+
     }
 
     @Override
@@ -59,27 +65,28 @@ public class MainActivity extends AppCompatActivity
 
 
         switch (id) {
+
             case R.id.nav_home:
-                fragment = new HomeFragment();
-                fragmentTransaction = true;
+                fragment = HomeFragment.getInstance();
+                mostrarFragment(fragment);
                 getSupportActionBar().setTitle("Nature Heal");
                 break;
 
             case R.id.nav_cuenta:
-                fragment = new CuentaFragment();
-                fragmentTransaction = true;
+                fragment = CuentaFragment.getInstance();
+                mostrarFragment(fragment);
                 getSupportActionBar().setTitle("Cuenta");
                 break;
 
             case R.id.nav_fav:
-                fragment = new FavoritosFragment();
-                fragmentTransaction = true;
+                fragment = FavoritosFragment.getInstance();
+                mostrarFragment(fragment);
                 getSupportActionBar().setTitle("Favoritos");
                 break;
 
             case R.id.nav_conf:
-                fragment = new ConfiguracionFragment();
-                fragmentTransaction = true;
+                fragment = ConfiguracionFragment.getInstance();
+                mostrarFragment(fragment);
                 getSupportActionBar().setTitle("Configuración");
                 break;
 
@@ -89,8 +96,8 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_acerca:
-                fragment = new AcercaFragment();
-                fragmentTransaction = true;
+                fragment = AcercaFragment.getInstance();
+                mostrarFragment(fragment);
                 getSupportActionBar().setTitle("Acerca de Nature Heal");
 
                 break;
@@ -114,6 +121,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         if (fragmentTransaction) {
+
             getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
             item.setChecked(true);
 
@@ -126,6 +134,14 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onFragmentInteraction(Uri uri) {
+
+    }
+    public void mostrarFragment(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.content_main, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
 
     }
 }

@@ -105,4 +105,10 @@ public class FavoritosFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+    public static FavoritosFragment getInstance(){
+        FavoritosFragment fragment = new FavoritosFragment();
+        return fragment;
+    }
+
 }
