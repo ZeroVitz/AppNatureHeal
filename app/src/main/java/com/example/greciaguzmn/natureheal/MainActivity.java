@@ -3,6 +3,7 @@ package com.example.greciaguzmn.natureheal;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -15,6 +16,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AcercaFragment.OnFragmentInteractionListener, FavoritosFragment.OnFragmentInteractionListener,
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    //private Boolean exit = false; Booleano para salir
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -51,6 +54,25 @@ public class MainActivity extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
+        /*
+        Codigo para presionar atras para salir.
+        El drawer no se selecciona al anterior
+        if (exit) {
+            finish(); // finish activity
+        } else {
+            Toast.makeText(this, "Presiona Atras otra vez para salir.",
+                    Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            }, 3 * 1000);
+
+        }
+        */
+
     }
 
 
@@ -120,22 +142,11 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-        if (fragmentTransaction) {
-
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
-            item.setChecked(true);
-
-        }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
-
-    }
     public void mostrarFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
@@ -144,4 +155,11 @@ public class MainActivity extends AppCompatActivity
         transaction.commit();
 
     }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
+
+
 }
