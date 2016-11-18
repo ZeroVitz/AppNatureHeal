@@ -39,8 +39,8 @@
         android:id="@+id/buttonEnfermedad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/buttonRemedio"
-        android:layout_alignBottom="@+id/buttonRemedio"
+        android:layout_alignBaseline="@+id/btnRemedio"
+        android:layout_alignBottom="@+id/btnRemedio"
         android:layout_alignEnd="@+id/txtcopyright"
         android:layout_marginEnd="13dp"
         android:text="@string/buscarEnfermedad" />
@@ -60,7 +60,7 @@
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/buttonRemedio"
+        android:layout_alignStart="@+id/btnRemedio"
         android:layout_below="@+id/titulo"
         android:layout_marginStart="49dp"
         app:srcCompat="@drawable/ic_leaf" />
@@ -76,7 +76,7 @@
         app:srcCompat="@drawable/ic_food" />
 
     <Button
-        android:id="@+id/buttonRemedio"
+        android:id="@+id/btnRemedio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/txtcopyright"

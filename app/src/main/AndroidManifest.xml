@@ -36,9 +36,9 @@
         <activity android:name=".Registro2Activity" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login">
-
-        </activity>
+            android:label="@string/title_activity_login" />
+        <activity android:name=".Enfermedades" />
+        <activity android:name=".Remedios"></activity>
     </application>
 
 </manifest>
