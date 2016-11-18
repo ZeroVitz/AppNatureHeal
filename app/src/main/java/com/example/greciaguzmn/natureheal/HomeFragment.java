@@ -21,7 +21,7 @@ import android.widget.Button;
  */
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
-    Button mboton;
+    Button mboton, m2boton;
     Context context;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -82,6 +82,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent);
             }
         });
+
+        m2boton =(Button)rootView.findViewById(R.id.btnRemedio);
+        m2boton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(context, Remedios.class);
+                startActivity(intent2);
+            }
+        });
+
         return rootView;
     }
 
