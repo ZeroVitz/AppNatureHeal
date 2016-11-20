@@ -17,7 +17,7 @@ public class Enfermedades extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enfermedades);
         nlistcontainer = (RecyclerView)findViewById(R.id.listcontainer);
-        EnfermedadAdapter adapter = new EnfermedadAdapter(this,getDatasources());
+        EnfermedadAdapter adapter = new EnfermedadAdapter(this,getDatasources(),this);
         nlistcontainer.setLayoutManager(new LinearLayoutManager(this));
         nlistcontainer.setAdapter(adapter);
     }
@@ -26,10 +26,6 @@ public class Enfermedades extends AppCompatActivity {
         List<ClaseEnfermedad> list = new ArrayList<>();
 
         list.add(new ClaseEnfermedad("Gripe"));
-        list.add(new ClaseEnfermedad("Fiebre"));
-        list.add(new ClaseEnfermedad("Dolor de cabeza"));
-        list.add(new ClaseEnfermedad("Dolor de Estomago"));
-        list.add(new ClaseEnfermedad("Salpullido"));
         return list;
     }
 
