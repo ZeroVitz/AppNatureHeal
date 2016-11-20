@@ -19,9 +19,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.stephentuso.welcome.WelcomeHelper;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AcercaFragment.OnFragmentInteractionListener, FavoritosFragment.OnFragmentInteractionListener,
         ConfiguracionFragment.OnFragmentInteractionListener, HomeFragment.OnFragmentInteractionListener, CuentaFragment.OnFragmentInteractionListener {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +47,12 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = HomeFragment.getInstance();
         mostrarFragment(fragment);
 
+        //Welcome
+
+
     }
 
-    //private Boolean exit = false; Booleano para salir
+    private Boolean exit = false; //Booleano para salir
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -57,6 +64,7 @@ public class MainActivity extends AppCompatActivity
         /*
         Codigo para presionar atras para salir.
         El drawer no se selecciona al anterior
+        */
         if (exit) {
             finish(); // finish activity
         } else {
@@ -71,7 +79,7 @@ public class MainActivity extends AppCompatActivity
             }, 3 * 1000);
 
         }
-        */
+
 
     }
 
@@ -160,6 +168,10 @@ public class MainActivity extends AppCompatActivity
     public void onFragmentInteraction(Uri uri) {
 
     }
+
+
+
+
 
 
 }

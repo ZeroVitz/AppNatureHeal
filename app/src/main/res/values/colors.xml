@@ -3,4 +3,8 @@
     <color name="colorPrimary">#31c24a</color>
     <color name="colorPrimaryDark">#d70f801f</color>
     <color name="colorAccent">#40ffdc</color>
+    <color name="welcomeBackground2">#0040ff</color>
+    <color name="welcomeBackground3">#2ecc0e</color>
+    <color name="welcomeBackground1">#c203da</color>
+
 </resources>

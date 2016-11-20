@@ -6,9 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.stephentuso.welcome.WelcomeHelper;
+
 public class Registro1Activity extends AppCompatActivity implements View.OnClickListener {
 
     Button boton;
+    WelcomeHelper welcomeScreen;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +20,11 @@ public class Registro1Activity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_registro1);
         boton = (Button) findViewById(R.id.botonReg);
         boton.setOnClickListener(this);
+
+        welcomeScreen = new WelcomeHelper(this, MyWelcomeActivity.class);
+        welcomeScreen.show(savedInstanceState);
+
+
     }
 
 
@@ -32,4 +41,12 @@ public class Registro1Activity extends AppCompatActivity implements View.OnClick
         }
 
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        welcomeScreen.onSaveInstanceState(outState);
+    }
+
+
 }
