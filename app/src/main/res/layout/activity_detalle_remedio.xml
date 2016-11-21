@@ -27,7 +27,7 @@
         android:textAlignment="center" />
 
     <TextView
-        android:text="trataremos acerca de la infusión de lavanda. Este tipo de té en particular se ha utilizado durante siglos, especialmente para las personas que sufren de trastornos del sistema nervioso"
+        android:text="Trataremos acerca de la infusión de lavanda. Este tipo de té en particular se ha utilizado durante siglos, especialmente para las personas que sufren de trastornos del sistema nervioso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/parrafoTe" />
@@ -44,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/parrafoPreparacion"
-        android:text="simplemente sumerge unas cuantas de las flores secas en agua hirviendo, déjalo reposar durante unos 10 minutos, cuela y sirve el té." />
+        android:text="Simplemente sumerge unas cuantas de las flores secas en agua hirviendo, déjalo reposar durante unos 10 minutos, cuela y sirve el té." />
 
     <TextView
         android:text="Advertencia:"
