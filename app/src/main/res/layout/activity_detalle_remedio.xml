@@ -15,7 +15,11 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="113dp"
+<<<<<<< HEAD
         app:srcCompat="@drawable/lavanda"
+=======
+        app:srcCompat="@drawable/lavanda2"
+>>>>>>> 1794aa990afd42eb9e61ed08916f0029603c8b4f
         android:id="@+id/dimagenRemedio" />
 
     <TextView
