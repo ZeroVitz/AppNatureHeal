@@ -6,13 +6,13 @@ package com.example.greciaguzmn.natureheal;
 
 public class ClaseRemedios {
 
-    String nombreRemedio;
+    static String nombreRemedio;
 
     public ClaseRemedios(String nombreRemedio) {
         this.nombreRemedio = nombreRemedio;
     }
 
-    public String getNombreRemedio() {
+    public static String getNombreRemedio() {
         return nombreRemedio;
     }
 

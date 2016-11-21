@@ -1,6 +1,7 @@
 package com.example.greciaguzmn.natureheal;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,16 +23,18 @@ public class RemedioAdapter extends RecyclerView.Adapter<RemedioAdapter.Customr>
 
     List<ClaseRemedios> datasource2;
     Activity mActivity2;
+    Context ctx2;
 
-    public RemedioAdapter(Activity activity2, List<ClaseRemedios> fuenteDeDatos2) {
+    public RemedioAdapter(Activity activity2, List<ClaseRemedios> fuenteDeDatos2, Context ctx2) {
         mActivity2 = activity2;
         datasource2 = fuenteDeDatos2;
+        this.ctx2 = ctx2;
     }
 
     @Override
     public RemedioAdapter.Customr onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_remedio, parent, false);
-        Customr custom2 = new Customr(view);
+        Customr custom2 = new Customr(view, ctx2, datasource2);
 
         return custom2;
     }
@@ -45,14 +49,17 @@ public class RemedioAdapter extends RecyclerView.Adapter<RemedioAdapter.Customr>
         return datasource2.size();
     }
 
-    class Customr extends RecyclerView.ViewHolder implements AdapterView.OnClickListener{
+    class Customr extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         public TextView textView;
         public TextView nombreRemedio;
-
-        public Customr(View itemView) {
+        List<ClaseRemedios> remedios = new ArrayList<>();
+        Context ctx2;
+        public Customr(View itemView, Context ctx2, List<ClaseRemedios> remedios) {
 
             super(itemView);
+            this.remedios = remedios;
+            this.ctx2 = ctx2;
             ImageView image = (ImageView) itemView.findViewById(R.id.imagen2);
             image.setOnClickListener(this);
             itemView.setOnClickListener(this);
@@ -62,10 +69,11 @@ public class RemedioAdapter extends RecyclerView.Adapter<RemedioAdapter.Customr>
 
         @Override
         public void onClick(View v) {
-            Toast.makeText(mActivity2, nombreRemedio.getText().toString(), Toast.LENGTH_LONG ).show();
-            Intent intent = new Intent(mActivity2, Remedios.class);
-            mActivity2.startActivity(intent);
-
+            int position = getAdapterPosition();
+            ClaseRemedios remedios= this.remedios.get(position);
+            Intent intent = new Intent(this.ctx2, Detalle_remedio.class );
+            intent.putExtra("nombreRemedio", ClaseRemedios.getNombreRemedio());
+            this.ctx2.startActivity(intent);
         }
     }
 }

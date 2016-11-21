@@ -17,7 +17,7 @@ public class Remedios extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_remedios);
         nlistcontainer2 = (RecyclerView)findViewById(R.id.listcontainer2);
-        RemedioAdapter adapter = new RemedioAdapter(this, getDatasources2());
+        RemedioAdapter adapter = new RemedioAdapter(this, getDatasources2(), this);
         nlistcontainer2.setLayoutManager(new LinearLayoutManager(this));
         nlistcontainer2.setAdapter(adapter);
 
@@ -26,10 +26,6 @@ public class Remedios extends AppCompatActivity {
     private List<ClaseRemedios> getDatasources2(){
         List<ClaseRemedios> list = new ArrayList<>();
         list.add(new ClaseRemedios("Té de lavanda"));
-        list.add(new ClaseRemedios("Té de canela tibio"));
-        list.add(new ClaseRemedios("Infusión de eucalipto"));
-        list.add(new ClaseRemedios("Vinagre de manzana"));
-        list.add(new ClaseRemedios("Mascarilla de naranja"));
         return list;
     }
 

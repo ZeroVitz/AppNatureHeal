@@ -43,15 +43,13 @@
             android:label="@string/title_activity_login" />
         <activity android:name=".Enfermedades" />
         <activity android:name=".Remedios" />
-
-
-
-
-
-
-
         <activity android:name=".DetallesEnfermedad" />
         <activity android:name=".Detalle_remedio"></activity>
+
+        <activity android:name=".MyWelcomeActivity"
+            android:theme="@style/WelcomeScreenTheme">
+        </activity>
+
     </application>
 
 </manifest>
