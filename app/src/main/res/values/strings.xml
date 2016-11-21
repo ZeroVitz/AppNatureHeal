@@ -21,10 +21,21 @@
 
 
     <string-array name="opciones">
-        <item>Opcion A</item>
-        <item>Opcion B</item>
+        <item>Borrar Preferencia</item>
+        <!--<item>Opcion B</item>
         <item>Opcion C</item>
-        <item>Opcion D</item>
+        <item>Opcion D</item>-->
+    </string-array>
+
+    <string-array name="alimentos">
+        <item>Lacteos</item>
+        <item>Carne</item>
+        <item>Mariscos</item>
+    </string-array>
+
+    <string-array name="alergias">
+        <item>Nasales</item>
+        <item>Piel</item>
     </string-array>
 
     <string-array name="opcuenta">
