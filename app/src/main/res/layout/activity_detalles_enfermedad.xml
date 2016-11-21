@@ -12,14 +12,74 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_food"
+        android:layout_width="389dp"
+        android:layout_height="93dp"
+        android:src="@drawable/gripe"
         android:id="@+id/dimagenEnfermedad"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="32dp"
         android:text="Gripe"
-        android:id="@+id/dtituloenfermedad"/>
+        android:id="@+id/dtituloenfermedad"
+        android:textSize="24sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Es una infección de la nariz, la garganta y los pulmones que se propaga fácilmente.  "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parrafoGripe" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Sintomas:"
+        android:id="@+id/Sintomas"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Dolores en el cuerpo, Escalofríos, Mareos, Cara sonrojada, Dolor de cabeza, Falta de energía, Náuseas y vómitos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parrafoSintomas" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Precauciones:"
+        android:id="@+id/precauciones"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="1. Use una máscara si sale de su cuarto."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parrafo1Pre" />
+
+    <TextView
+        android:text="2. Cúbrase la boca con un pañuelo de papel al toser y bótelo después de usarlo."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parrafo2Pre" />
+
+    <TextView
+        android:text="3. Absténgase de compartir alimentos, utensilios, tazas o botellas. "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parrafo3Pre" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Recomendaciones:"
+        android:id="@+id/recomendaciones"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="necesita descansar mucho. Tome bastantes líquidos. NO fume ni beba alcohol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parrafoRec" />
 
 </LinearLayout>
