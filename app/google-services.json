@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "748612210492",
+    "firebase_url": "https://natureheal-96cd4.firebaseio.com",
+    "project_id": "natureheal-96cd4",
+    "storage_bucket": "natureheal-96cd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748612210492:android:be3f772fee9c4577",
+        "android_client_info": {
+          "package_name": "com.example.greciaguzmn.natureheal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748612210492-imjp51oir24q93bbuolbhs4u95nkpi3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUSKqqu3EA7QGT8PIcXWFW2aLCQ05Gmgk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
