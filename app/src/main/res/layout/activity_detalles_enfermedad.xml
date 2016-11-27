@@ -4,81 +4,70 @@
     android:id="@+id/activity_detalles_enfermedad"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.greciaguzmn.natureheal.DetallesEnfermedad"
-    android:orientation="vertical">
+    android:weightSum="1">
 
     <ImageView
+        android:id="@+id/dimagenEnfermedad"
         android:layout_width="389dp"
         android:layout_height="93dp"
-        android:src="@drawable/gripe"
-        android:id="@+id/dimagenEnfermedad"/>
+        android:src="@drawable/gripe" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
         android:id="@+id/dtituloenfermedad"
-        android:textSize="24sp"
-        android:textAlignment="center" />
-
-    <TextView
-        android:text="Es una infección de la nariz, la garganta y los pulmones que se propaga fácilmente.  "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/parrafoGripe" />
+        android:textAlignment="center"
+        android:textSize="24sp" />
 
     <TextView
+        android:id="@+id/parrafoGripe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:id="@+id/Sintomas"
         android:layout_width="match_parent"
         android:layout_height="32dp"
         android:text="Sintomas:"
-        android:id="@+id/Sintomas"
         android:textSize="24sp" />
 
     <TextView
-        android:text="Dolores en el cuerpo, Escalofríos, Mareos, Cara sonrojada, Dolor de cabeza, Falta de energía, Náuseas y vómitos"
+        android:id="@+id/parrafoSintomas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/parrafoSintomas" />
+        android:layout_weight="0.04" />
 
     <TextView
+        android:id="@+id/precauciones"
         android:layout_width="match_parent"
         android:layout_height="32dp"
         android:text="Precauciones:"
-        android:id="@+id/precauciones"
         android:textSize="24sp" />
 
     <TextView
-        android:text="1. Use una máscara si sale de su cuarto."
+        android:id="@+id/parrafo1Pre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/parrafo1Pre" />
+        android:layout_weight="0.06" />
 
     <TextView
-        android:text="2. Cúbrase la boca con un pañuelo de papel al toser y bótelo después de usarlo."
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/parrafo2Pre" />
-
-    <TextView
-        android:text="3. Absténgase de compartir alimentos, utensilios, tazas o botellas. "
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/parrafo3Pre" />
-
-    <TextView
+        android:id="@+id/recomendaciones"
         android:layout_width="match_parent"
         android:layout_height="32dp"
         android:text="Recomendaciones:"
-        android:id="@+id/recomendaciones"
         android:textSize="24sp" />
 
     <TextView
-        android:text="necesita descansar mucho. Tome bastantes líquidos. NO fume ni beba alcohol"
+        android:id="@+id/parrafoRec"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/parrafoRec" />
+        android:layout_weight="0.10" />
 
 </LinearLayout>
