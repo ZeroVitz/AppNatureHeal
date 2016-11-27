@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "748612210492-mqme6vbl97kv4apt2at2juvani03dhma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.greciaguzmn.natureheal",
+            "certificate_hash": "E65479688B18CE372E55E2E35ACE2451CFC04574"
+          }
+        },
+        {
+          "client_id": "748612210492-tq9hn81p8kltsp4u4snfpnfiisue2b71.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.greciaguzmn.natureheal",
+            "certificate_hash": "3FBF63A1CB7B7D986ED81EC3179416CBED464CA1"
+          }
+        },
+        {
           "client_id": "748612210492-t84jma56e9geklqjgm89gcmqa5n01gf3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

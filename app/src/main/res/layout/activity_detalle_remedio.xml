@@ -19,7 +19,6 @@
 
 
     <TextView
-        android:text="Té de Lavanda"
         android:layout_width="match_parent"
         android:layout_height="32dp"
         android:id="@+id/dtituloRemedio"
@@ -27,7 +26,6 @@
         android:textAlignment="center" />
 
     <TextView
-        android:text="Trataremos acerca de la infusión de lavanda. Este tipo de té en particular se ha utilizado durante siglos, especialmente para las personas que sufren de trastornos del sistema nervioso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/parrafoTe" />
@@ -43,8 +41,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/parrafoPreparacion"
-        android:text="Simplemente sumerge unas cuantas de las flores secas en agua hirviendo, déjalo reposar durante unos 10 minutos, cuela y sirve el té." />
+        android:id="@+id/parrafoPreparacion" />
 
     <TextView
         android:text="Advertencia:"
@@ -54,32 +51,8 @@
         android:textSize="24sp" />
 
     <TextView
-        android:text="No se aconseja el consumo de lavanda ante las siguientes patologías o enfermedades:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/parrafoAd1" />
 
-    <TextView
-        android:text="*Epilepsia."
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/parrafoad2" />
-
-    <TextView
-        android:text="*Parkinson."
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/parrafoad3" />
-
-    <TextView
-        android:text="*Embarazo."
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/parrafoad4" />
-
-    <TextView
-        android:text="*Colon irritable"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/parrafoad5" />
 </LinearLayout>
