@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "748612210492-t84jma56e9geklqjgm89gcmqa5n01gf3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.greciaguzmn.natureheal",
+            "certificate_hash": "99C9940365BAF1E4CD354EE1E2D6C974A7A95E4F"
+          }
+        },
+        {
           "client_id": "748612210492-imjp51oir24q93bbuolbhs4u95nkpi3m.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748612210492-imjp51oir24q93bbuolbhs4u95nkpi3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

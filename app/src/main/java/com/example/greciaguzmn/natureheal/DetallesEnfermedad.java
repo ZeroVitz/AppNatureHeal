@@ -16,4 +16,6 @@ public class DetallesEnfermedad extends AppCompatActivity {
         txtNombre =(TextView)findViewById(R.id.dtituloenfermedad);
         txtNombre.setText(getIntent().getStringExtra("nombreEnfermedad"));
     }
+
+    
 }
