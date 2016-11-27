@@ -20,7 +20,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="32dp"
-        android:text="Gripe"
         android:id="@+id/dtituloenfermedad"
         android:textSize="24sp"
         android:textAlignment="center" />
