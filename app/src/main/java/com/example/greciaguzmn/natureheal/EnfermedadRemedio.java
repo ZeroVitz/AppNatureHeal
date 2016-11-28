@@ -4,13 +4,13 @@ package com.example.greciaguzmn.natureheal;
  * Created by CRUZ on 27/11/2016.
  */
 
-public class Enfermedad {
+public class EnfermedadRemedio {
 
     private String nombre, imagen;
 
-    public Enfermedad (){}
+    public EnfermedadRemedio(){}
 
-    public Enfermedad(String nombre, String imagen) {
+    public EnfermedadRemedio(String nombre, String imagen) {
         this.nombre = nombre;
         this.imagen = imagen;
     }
