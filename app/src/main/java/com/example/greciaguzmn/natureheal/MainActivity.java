@@ -17,6 +17,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -66,37 +67,14 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private Boolean exit = false; //Booleano para salir
     @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            //preventing default implementation previous to android.os.Build.VERSION_CODES.ECLAIR
+            return true;
         }
-        /*
-        Codigo para presionar atras para salir.
-        El drawer no se selecciona al anterior
-        */
-        if (exit) {
-            finish(); // finish activity
-        } else {
-            Toast.makeText(this, "Presiona Atras otra vez para salir.",
-                    Toast.LENGTH_SHORT).show();
-            exit = true;
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    exit = false;
-                }
-            }, 3 * 1000);
-
-        }
-
-
+        return super.onKeyDown(keyCode, event);
     }
-
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
