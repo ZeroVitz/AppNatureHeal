@@ -1,13 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_detalle_enfermedad2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.greciaguzmn.natureheal.DetalleEnfermedad2">
+    tools:context="com.example.greciaguzmn.natureheal.DetallesEnfermedad"
+    android:weightSum="1">
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/dimagenEnfermedad2"
+        android:layout_width="wrap_content"
+        android:layout_height="93dp"
+        android:src="@drawable/migrana" />
+
+    <TextView
+        android:id="@+id/dtituloenfermedad2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/parrafoMigraña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:id="@+id/SintomasMigraña"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Sintomas:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/parrafoSintomasMigraña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:id="@+id/precaucionesMigraña"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Precauciones:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/parrafo1PreMigraña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:id="@+id/recomendacionesMigraña"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Recomendaciones:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/parrafoRecMigraña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10" />
+
+</LinearLayout>
