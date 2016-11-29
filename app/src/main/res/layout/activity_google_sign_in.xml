@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_google_sign_in"
     android:layout_width="match_parent"
@@ -10,9 +11,56 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.greciaguzmn.natureheal.GoogleSignInActivity">
 
+    <TextView
+        android:text="Una solución natural a tus enfermedades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textColor="#131111"
+        android:fontFamily="casual"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:textSize="12sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:text="NATURE HEAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/tituloapp"
+        android:textSize="30sp"
+        android:textColor="#0d0c0c"
+        android:fontFamily="casual"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView6" />
+
     <com.google.android.gms.common.SignInButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/googleBtn"></com.google.android.gms.common.SignInButton>
+        android:id="@+id/googleBtn"
+        android:layout_marginTop="38dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"></com.google.android.gms.common.SignInButton>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/launcher"
+        android:layout_marginTop="26dp"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/tituloapp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Copyright @DreamTeamOrigins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

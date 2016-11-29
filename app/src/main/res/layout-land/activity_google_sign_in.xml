@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_google_sign_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.greciaguzmn.natureheal.GoogleSignInActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/launcher"
+        android:id="@+id/imageView5"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="51dp" />
+
+    <TextView
+        android:text="Copyright @DreamTeamOrigins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <TextView
+        android:text="NATURE HEAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tituloapp"
+        android:textSize="30sp"
+        android:textColor="#0d0c0c"
+        android:fontFamily="casual"
+        android:layout_above="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <TextView
+        android:text="Una solución natural a tus enfermedades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textColor="#131111"
+        android:fontFamily="casual"
+        android:textSize="12sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_marginEnd="31dp"
+        android:layout_above="@+id/googleBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/googleBtn"
+        android:background="@color/cardview_shadow_start_color"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="13dp"></com.google.android.gms.common.SignInButton>
+
+</RelativeLayout>
