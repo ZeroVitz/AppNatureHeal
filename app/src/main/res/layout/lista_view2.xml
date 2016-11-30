@@ -11,13 +11,13 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/postImage"
+            android:id="@+id/postImage2"
             android:layout_width="90dp"
             android:layout_height="70dp"
             app:srcCompat="@drawable/ic_lechetomate" />
 
         <TextView
-            android:id="@+id/postTitle"
+            android:id="@+id/postTitle2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Texto de la enfermedad"

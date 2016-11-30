@@ -21,7 +21,7 @@ import java.util.List;
 
 public class Remedios extends AppCompatActivity {
 
-    private RecyclerView nlistenfermedades;
+    private RecyclerView nlistenremedios;
 
     private DatabaseReference mDatabase;
 
@@ -32,9 +32,9 @@ public class Remedios extends AppCompatActivity {
 
         mDatabase = FirebaseDatabase.getInstance().getReference().child("remedios");
 
-        nlistenfermedades = (RecyclerView) findViewById(R.id.listaremedios);
-        nlistenfermedades.setHasFixedSize(true);
-        nlistenfermedades.setLayoutManager(new LinearLayoutManager(this));
+        nlistenremedios = (RecyclerView) findViewById(R.id.listaremedios);
+        nlistenremedios.setHasFixedSize(true);
+        nlistenremedios.setLayoutManager(new LinearLayoutManager(this));
 
     }
 
@@ -50,12 +50,12 @@ public class Remedios extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        FirebaseRecyclerAdapter<EnfermedadRemedio, Enfermedades.EnfermedadViewHolder> FirebaseRecyclerAdapter = new FirebaseRecyclerAdapter<EnfermedadRemedio, Enfermedades.EnfermedadViewHolder>(
-                EnfermedadRemedio.class, R.layout.lista_view2, Enfermedades.EnfermedadViewHolder.class,mDatabase) {
+        FirebaseRecyclerAdapter<EnfermedadRemedio, RemedioViewHolder> FirebaseRecyclerAdapter = new FirebaseRecyclerAdapter<EnfermedadRemedio, RemedioViewHolder>(
+                EnfermedadRemedio.class, R.layout.lista_view2, RemedioViewHolder.class,mDatabase) {
 
 
             @Override
-            protected void populateViewHolder(Enfermedades.EnfermedadViewHolder viewHolder, EnfermedadRemedio model, final int position) {
+            protected void populateViewHolder(RemedioViewHolder viewHolder, EnfermedadRemedio model, final int position) {
 
                 final String post_key = model.getNombre();
 
@@ -82,20 +82,20 @@ public class Remedios extends AppCompatActivity {
             }
         };
 
-        nlistenfermedades.setAdapter(FirebaseRecyclerAdapter);
+        nlistenremedios.setAdapter(FirebaseRecyclerAdapter);
     }
 
-    public static class EnfermedadViewHolder extends RecyclerView.ViewHolder{
+    public static class RemedioViewHolder extends RecyclerView.ViewHolder{
 
         View mview;
         TextView post_title;
 
-        public EnfermedadViewHolder(View itemView) {
+        public RemedioViewHolder(View itemView) {
             super(itemView);
 
             mview = itemView ;
 
-            post_title = (TextView) mview.findViewById(R.id.postTitle);
+            post_title = (TextView) mview.findViewById(R.id.postTitle2);
 
             post_title.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -107,13 +107,13 @@ public class Remedios extends AppCompatActivity {
 
         public void setTitle(String title) {
 
-            TextView postTitle = (TextView) mview.findViewById(R.id.postTitle);
+            TextView postTitle = (TextView) mview.findViewById(R.id.postTitle2);
             postTitle.setText(title);
         }
 
         public void setImage (Context ctx, String image) {
 
-            ImageView post_image = (ImageView) mview.findViewById(R.id.postImage);
+            ImageView post_image = (ImageView) mview.findViewById(R.id.postImage2);
             Picasso.with(ctx).load(image).into(post_image);
 
         }
