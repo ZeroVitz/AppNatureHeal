@@ -29,6 +29,7 @@ public class detalles_remedio2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalles_remedio2);
+        dbPerejil.keepSynced(true);
         txtNombre = (TextView) findViewById(R.id.dtituloRemedio2);
         txtNombre.setText(getIntent().getStringExtra("nombreRemedio"));
         // Todos los TextView del layout

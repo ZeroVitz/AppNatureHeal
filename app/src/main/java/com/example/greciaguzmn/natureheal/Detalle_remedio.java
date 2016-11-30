@@ -33,6 +33,7 @@ public class Detalle_remedio extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_remedio);
+        dbGripe.keepSynced(true);
         txtNombre = (TextView) findViewById(R.id.dtituloRemedio);
         txtNombre.setText(getIntent().getStringExtra("nombreRemedio"));
         // Todos los TextView del layout

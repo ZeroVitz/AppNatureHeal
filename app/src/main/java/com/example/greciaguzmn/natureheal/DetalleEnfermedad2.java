@@ -31,7 +31,9 @@ public class DetalleEnfermedad2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        dbMigraña.keepSynced(true);
         setContentView(R.layout.activity_detalle_enfermedad2);
+
         txtNombre = (TextView) findViewById(R.id.dtituloenfermedad2);
         txtNombre.setText(getIntent().getStringExtra("nombreEnfermedad"));
         // Todos los TextView del layout
