@@ -28,7 +28,6 @@ public class detalles_remedio2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        dbPerejil.keepSynced(true);
         setContentView(R.layout.activity_detalles_remedio2);
         txtNombre = (TextView) findViewById(R.id.dtituloRemedio2);
         txtNombre.setText(getIntent().getStringExtra("nombreRemedio"));

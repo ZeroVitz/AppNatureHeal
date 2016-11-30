@@ -15,9 +15,6 @@ import android.widget.TextView;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.squareup.picasso.Callback;
-import com.squareup.picasso.NetworkPolicy;
-import com.squareup.picasso.OkHttpDownloader;
 import com.squareup.picasso.Picasso;
 
 
@@ -27,14 +24,12 @@ public class Enfermedades extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enfermedades);
+
         mDatabase = FirebaseDatabase.getInstance().getReference().child("enfermedades");
-        mDatabase.keepSynced(true);
 
         nlistenfermedades = (RecyclerView) findViewById(R.id.listenfermedades);
         nlistenfermedades.setHasFixedSize(true);
@@ -113,22 +108,10 @@ public class Enfermedades extends AppCompatActivity {
             postTitle.setText(title);
         }
 
-        public void setImage (final Context ctx, final String image) {
+        public void setImage (Context ctx, String image) {
 
-            final ImageView post_image = (ImageView) mview.findViewById(R.id.postImage);
-            Picasso.with(ctx).load(image).networkPolicy(NetworkPolicy.OFFLINE).into(post_image, new Callback() {
-                @Override
-                public void onSuccess() {
-
-                }
-
-                @Override
-                public void onError() {
-                    Picasso.with(ctx).load(image).into(post_image);
-
-
-                }
-            });
+            ImageView post_image = (ImageView) mview.findViewById(R.id.postImage);
+            Picasso.with(ctx).load(image).into(post_image);
 
         }
 

@@ -26,16 +26,13 @@ public class Detalle_remedio extends AppCompatActivity {
 
     //Mandamos a buscar la referencia a la raiz de nuestra BD no relacional
     private DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
-
     //Recorremos la BD hasta llegar al dato que nos interesa
     private DatabaseReference dbGripe = mRootRef.child("remedios").child("te_lavanda");
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_remedio);
-        dbGripe.keepSynced(true);
         txtNombre = (TextView) findViewById(R.id.dtituloRemedio);
         txtNombre.setText(getIntent().getStringExtra("nombreRemedio"));
         // Todos los TextView del layout

@@ -22,8 +22,6 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.squareup.picasso.OkHttpDownloader;
-import com.squareup.picasso.Picasso;
 import com.stephentuso.welcome.WelcomeHelper;
 
 public class MainActivity extends AppCompatActivity

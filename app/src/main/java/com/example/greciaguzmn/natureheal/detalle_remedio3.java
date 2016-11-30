@@ -27,7 +27,6 @@ public class detalle_remedio3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_remedio3);
-        dbManzana.keepSynced(true);
         txtNombre = (TextView) findViewById(R.id.dtituloRemedio3);
         txtNombre.setText(getIntent().getStringExtra("nombreRemedio"));
         txtTitulo = (TextView) findViewById(R.id.dtituloRemedio3);
