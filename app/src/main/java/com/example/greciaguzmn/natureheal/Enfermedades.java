@@ -72,6 +72,9 @@ public class Enfermedades extends AppCompatActivity {
                         } else if ((post_key.equals("Obesidad"))) {
                             Intent intent = new Intent(getApplicationContext(), DetalleEnfermedad3.class);
                             startActivity(intent);
+                        } else if ((post_key.equals("Fiebre"))) {
+                            Intent intent = new Intent(getApplicationContext(), DetalleEnfermedad4.class);
+                            startActivity(intent);
                         }
                     }
                 });

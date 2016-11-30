@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1" android:layout_height="match_parent"
+     android:layout_width="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_detalle_enfermedad3"
@@ -14,7 +18,7 @@
 
     <ImageView
         android:id="@+id/dimagenEnfermedad3"
-        android:layout_width="match_parent"
+        android:layout_width="365dp"
         android:layout_height="93dp"
         android:src="@drawable/obesidad" />
 
@@ -49,7 +53,8 @@
         android:layout_width="match_parent"
         android:layout_height="32dp"
         android:text="Precauciones:"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_weight="0.10" />
 
     <TextView
         android:id="@+id/parrafo1PreObesidad"
@@ -62,7 +67,8 @@
         android:layout_width="match_parent"
         android:layout_height="32dp"
         android:text="Recomendaciones:"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_weight="0.10" />
 
     <TextView
         android:id="@+id/parrafoRecObesidad"
@@ -70,6 +76,5 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.10" />
 
-
-
 </LinearLayout>
+</ScrollView>
