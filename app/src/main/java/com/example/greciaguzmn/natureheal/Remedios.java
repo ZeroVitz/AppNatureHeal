@@ -69,6 +69,12 @@ public class Remedios extends AppCompatActivity {
                         if ((post_key.equals("Te de lavanda"))) {
                             Intent intent = new Intent(getApplicationContext(), Detalle_remedio.class);
                             startActivity(intent);
+                        }else if ((post_key.equals("Perejil con limon"))) {
+                            Intent intent = new Intent(getApplicationContext(), detalles_remedio2.class);
+                            startActivity(intent);
+                        }else if ((post_key.equals("Vinagre de manzana"))) {
+                            Intent intent = new Intent(getApplicationContext(), detalle_remedio3.class);
+                            startActivity(intent);
                         }
                     }
                 });
