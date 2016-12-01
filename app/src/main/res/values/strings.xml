@@ -21,7 +21,7 @@
 
 
     <string-array name="opciones">
-        <item>Borrar Preferencia</item>
+        <item>En construcción</item>
         <!--<item>Opcion B</item>
         <item>Opcion C</item>
         <item>Opcion D</item>-->
@@ -39,10 +39,10 @@
     </string-array>
 
     <string-array name="opcuenta">
-        <item>Alergias</item>
-        <item>Cambiar contraseña</item>
+        <item>En oonstruccion</item>
+        <!--<item>Cambiar contraseña</item>
         <item>Cambiar foto de perfil</item>
-        <item>Borrar cuenta</item>
+        <item>Borrar cuenta</item> -->
     </string-array>
 
     <string-array name="remedios">
@@ -99,5 +99,6 @@
     <string name="descartar">Descartar</string>
     <string name="enviar">Enviar</string>
     <string name="home">Home</string>
+    <string name="en_construcci_n">En construcción</string>
 
 </resources>

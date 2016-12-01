@@ -7,40 +7,21 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_alignParentStart="true"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/en_construcci_n"
+        android:textColor="#292323"
+        android:textSize="50dp"
+        android:layout_marginTop="27dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="104dp"
-        app:srcCompat="@drawable/ic_sad" />
+        android:layout_centerHorizontal="true" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_alignTop="@+id/imageButton5"
-        android:layout_marginStart="23dp"
-        android:layout_toEndOf="@+id/imageButton5"
-        app:srcCompat="@drawable/ic_banana" />
-
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_alignStart="@+id/imageButton5"
-        android:layout_below="@+id/imageButton5"
-        android:layout_marginTop="16dp"
-        app:srcCompat="@drawable/ic_heart" />
-
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_alignStart="@+id/imageButton"
-        android:layout_alignTop="@+id/imageButton6"
-        app:srcCompat="@drawable/ic_hospital" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/obrero"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
