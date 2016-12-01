@@ -32,11 +32,8 @@ public class MainActivity extends AppCompatActivity
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private NavigationView navigationView;
-    WelcomeHelper welcomeScreen;
 
     protected void onCreate(Bundle savedInstanceState) {
-        welcomeScreen = new WelcomeHelper(this, MyWelcomeActivity.class);
-        welcomeScreen.show(savedInstanceState);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -190,10 +187,4 @@ public class MainActivity extends AppCompatActivity
             getSupportActionBar().setTitle("Acerca de Nature Heal");
         }
     }
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        welcomeScreen.onSaveInstanceState(outState);
-    }
-
 }

@@ -33,9 +33,6 @@
         <activity android:name=".Remedios" />
         <activity android:name=".DetallesEnfermedad" />
         <activity android:name=".Detalle_remedio" />
-        <activity
-            android:name=".MyWelcomeActivity"
-            android:theme="@style/WelcomeScreenTheme" />
         <activity android:name=".DetalleEnfermedad2" />
         <activity android:name=".DetalleEnfermedad3" />
         <activity android:name=".detalles_remedio2" />
