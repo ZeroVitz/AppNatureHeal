@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.greciaguzmn.natureheal.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titulo"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="31dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginEnd="63dp" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/bienvenidos"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        tools:layout_marginBottom="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_leaf"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_food"
+        android:layout_marginEnd="18dp"
+        android:layout_below="@+id/titulo"
+        android:layout_alignEnd="@+id/txtcopyright" />
+
+    <TextView
+        android:id="@+id/txtcopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:text="@string/copyright"
+        android:textColor="#050505"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnRemedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="false"
+        android:text="@string/buscarRemedios"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnEnfermedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buscarEnfermedad"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignEnd="@+id/btnRemedio" />
+
+
+</RelativeLayout>
