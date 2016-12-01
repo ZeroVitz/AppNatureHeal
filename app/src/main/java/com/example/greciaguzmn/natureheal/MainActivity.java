@@ -94,9 +94,11 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_cuenta:
-                fragment = CuentaFragment.getInstance();
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com"));
+                startActivity(browserIntent);
+                /*fragment = CuentaFragment.getInstance();
                 mostrarFragment(fragment);
-                getSupportActionBar().setTitle("Cuenta");
+                getSupportActionBar().setTitle("Cuenta");*/
                 break;
 
             case R.id.nav_fav:
@@ -106,9 +108,11 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_conf:
-                fragment = ConfiguracionFragment.getInstance();
+                Intent browser2Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/settings"));
+                startActivity(browser2Intent);
+               /* fragment = ConfiguracionFragment.getInstance();
                 mostrarFragment(fragment);
-                getSupportActionBar().setTitle("Configuración");
+                getSupportActionBar().setTitle("Configuración");*/
                 break;
 
             case R.id.nav_sugerencia:
