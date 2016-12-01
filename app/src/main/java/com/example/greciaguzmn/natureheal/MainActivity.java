@@ -23,7 +23,6 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.stephentuso.welcome.WelcomeHelper;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AcercaFragment.OnFragmentInteractionListener, FavoritosFragment.OnFragmentInteractionListener,
