@@ -28,11 +28,6 @@
             android:name=".PopActivity"
             android:theme="@style/AppTheme.CustomTheme" />
         <activity android:name=".GoogleSignInActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Enfermedades" />
         <activity android:name=".Remedios" />
@@ -47,6 +42,13 @@
         <activity android:name=".detalle_remedio3" />
         <activity android:name=".DetalleEnfermedad4" />
         <activity android:name=".detalle_remedio4"></activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
