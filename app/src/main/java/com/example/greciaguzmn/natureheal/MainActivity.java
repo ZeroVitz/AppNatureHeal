@@ -17,6 +17,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -26,10 +27,11 @@ import com.stephentuso.welcome.WelcomeHelper;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AcercaFragment.OnFragmentInteractionListener, FavoritosFragment.OnFragmentInteractionListener,
-        ConfiguracionFragment.OnFragmentInteractionListener, HomeFragment.OnFragmentInteractionListener, CuentaFragment.OnFragmentInteractionListener {
+        ConfiguracionFragment.OnFragmentInteractionListener, HomeFragment.OnFragmentInteractionListener, CuentaFragment.OnFragmentInteractionListener, FragmentManager.OnBackStackChangedListener {
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+    private NavigationView navigationView;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,24 +58,21 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         Fragment fragment = HomeFragment.getInstance();
-        mostrarFragment(fragment);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.content_main, fragment);
+        transaction.commit();
+
+        getSupportFragmentManager().addOnBackStackChangedListener(this);
 
         //Welcome
 
 
-    }
-
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            //preventing default implementation previous to android.os.Build.VERSION_CODES.ECLAIR
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -167,9 +166,24 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-
-
-
-
-
+    @Override
+    public void onBackStackChanged() {
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.content_main);
+        if(fragment instanceof HomeFragment){
+            navigationView.setCheckedItem(R.id.nav_home);
+            getSupportActionBar().setTitle("Nature Heal");
+        }else if(fragment instanceof CuentaFragment){
+            navigationView.setCheckedItem(R.id.nav_cuenta);
+            getSupportActionBar().setTitle("Cuenta");
+        } else if(fragment instanceof FavoritosFragment){
+            navigationView.setCheckedItem(R.id.nav_fav);
+            getSupportActionBar().setTitle("Favoritos");
+        }else if(fragment instanceof ConfiguracionFragment){
+            navigationView.setCheckedItem(R.id.nav_conf);
+            getSupportActionBar().setTitle("Configuración");
+        }else if(fragment instanceof AcercaFragment){
+            navigationView.setCheckedItem(R.id.nav_acerca);
+            getSupportActionBar().setTitle("Acerca de Nature Heal");
+        }
+    }
 }
