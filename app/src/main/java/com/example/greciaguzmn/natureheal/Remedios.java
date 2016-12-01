@@ -78,6 +78,9 @@ public class Remedios extends AppCompatActivity {
                         }else if ((post_key.equals("Vinagre de manzana"))) {
                             Intent intent = new Intent(getApplicationContext(), detalle_remedio3.class);
                             startActivity(intent);
+                        }else if ((post_key.equals("Aceite de coco"))) {
+                            Intent intent = new Intent(getApplicationContext(), detalle_remedio4.class);
+                            startActivity(intent);
                         }
                     }
                 });
