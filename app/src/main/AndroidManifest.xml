@@ -8,12 +8,12 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
+        android:name=".Offline"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".Offline">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -45,7 +45,8 @@
         <activity android:name=".DetalleEnfermedad3" />
         <activity android:name=".detalles_remedio2" />
         <activity android:name=".detalle_remedio3" />
-        <activity android:name=".DetalleEnfermedad4"></activity>
+        <activity android:name=".DetalleEnfermedad4" />
+        <activity android:name=".detalle_remedio4"></activity>
     </application>
 
 </manifest>
