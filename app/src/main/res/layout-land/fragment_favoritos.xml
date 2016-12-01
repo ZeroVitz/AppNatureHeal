@@ -8,49 +8,23 @@
     <!-- TODO: Update blank fragment layout -->
 
 
-    <ImageButton
-        android:id="@+id/ejemplo2"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_alignTop="@+id/ejemplo3"
-        android:layout_marginEnd="24dp"
-        android:layout_marginLeft="0dp"
-        android:layout_toStartOf="@+id/ejemplo3"
-        android:background="?attr/colorButtonNormal"
-        app:srcCompat="@drawable/ic_heart"
-
-        />
-
-    <ImageButton
-        android:id="@+id/ejemplo3"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_alignStart="@+id/ejemplo"
-        android:layout_below="@+id/ejemplo"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="13dp"
-        android:background="?attr/colorButtonNormal"
-        app:srcCompat="@drawable/ic_hospital" />
-
-    <ImageButton
-        android:id="@+id/ejemplo4"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_alignStart="@+id/ejemplo2"
-        android:layout_alignTop="@+id/ejemplo"
-        android:layout_marginLeft="0dp"
-        android:background="?attr/colorButtonNormal"
-        app:srcCompat="@drawable/ic_sad" />
-
-    <ImageButton
-        android:id="@+id/ejemplo"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_alignParentEnd="true"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/en_construcci_n"
+        android:textColor="#292323"
+        android:textSize="50dp"
+        android:layout_marginTop="27dp"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="169dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="14dp"
-        android:background="?attr/colorButtonNormal"
-        app:srcCompat="@drawable/ic_banana" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/obrero"
+        android:id="@+id/imageView7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="60dp" />
 </RelativeLayout>
