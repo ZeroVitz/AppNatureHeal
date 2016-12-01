@@ -22,7 +22,6 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.stephentuso.welcome.WelcomeHelper;
 
 public class GoogleSignInActivity extends AppCompatActivity {
 
