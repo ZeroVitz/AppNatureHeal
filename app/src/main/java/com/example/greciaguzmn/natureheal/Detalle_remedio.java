@@ -75,11 +75,4 @@ public class Detalle_remedio extends AppCompatActivity {
             }
         });
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.search_menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
 }
