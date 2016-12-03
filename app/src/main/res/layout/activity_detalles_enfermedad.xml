@@ -18,9 +18,10 @@
 
     <ImageView
         android:id="@+id/dimagenEnfermedad"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="93dp"
-        android:src="@drawable/gripe" />
+        android:src="@drawable/gripe"
+        android:paddingLeft="35dp"/>
 
     <TextView
         android:id="@+id/dtituloenfermedad"
