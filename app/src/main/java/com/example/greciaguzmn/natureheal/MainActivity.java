@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setCheckedItem(R.id.nav_home);
 
         Fragment fragment = HomeFragment.getInstance();
 
@@ -96,9 +97,6 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_cuenta:
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com"));
                 startActivity(browserIntent);
-                /*fragment = CuentaFragment.getInstance();
-                mostrarFragment(fragment);
-                getSupportActionBar().setTitle("Cuenta");*/
                 break;
 
             case R.id.nav_fav:
@@ -110,9 +108,6 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_conf:
                 Intent browser2Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/settings"));
                 startActivity(browser2Intent);
-               /* fragment = ConfiguracionFragment.getInstance();
-                mostrarFragment(fragment);
-                getSupportActionBar().setTitle("Configuración");*/
                 break;
 
             case R.id.nav_sugerencia:
@@ -176,15 +171,9 @@ public class MainActivity extends AppCompatActivity
         if(fragment instanceof HomeFragment){
             navigationView.setCheckedItem(R.id.nav_home);
             getSupportActionBar().setTitle("Nature Heal");
-        }else if(fragment instanceof CuentaFragment){
-            navigationView.setCheckedItem(R.id.nav_cuenta);
-            getSupportActionBar().setTitle("Cuenta");
-        } else if(fragment instanceof FavoritosFragment){
+        }else if(fragment instanceof FavoritosFragment){
             navigationView.setCheckedItem(R.id.nav_fav);
             getSupportActionBar().setTitle("Favoritos");
-        }else if(fragment instanceof ConfiguracionFragment){
-            navigationView.setCheckedItem(R.id.nav_conf);
-            getSupportActionBar().setTitle("Configuración");
         }else if(fragment instanceof AcercaFragment){
             navigationView.setCheckedItem(R.id.nav_acerca);
             getSupportActionBar().setTitle("Acerca de Nature Heal");
